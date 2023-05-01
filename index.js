@@ -8,6 +8,10 @@ const app = express();
 
 const conn = require('./db/conn');
 
+// Models
+const Tought = require('./models/Tought');
+const User = require('./models/User');
+
 const hbs = exphbs.create({
     partialsDir: ['views/partials']
 });
@@ -61,7 +65,7 @@ app.use((req, res, next) => {
 
 
 conn
-    .sync()
+    .sync({force:true})
     .then(() => {
         app.listen(3000);
     })

@@ -1,0 +1,105 @@
+/* Project config Style´s starts Here */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --black0: #141414;
+    --black1: #242424;
+    --yellow: #fecc36;
+    --white: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--black1);
+}
+
+/* Project config Style´s ends Here */
+
+
+/* Main Header Style´s starts Here */
+
+#mainHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid var(--yellow);
+    padding: 0.7rem 0;
+}
+
+#mainHeader .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+#mainHeader .logo h2 {
+    font-size: 2rem;
+}
+
+#mainHeader img {
+    border-radius: 50%;
+    background-color: var(--white);
+    box-shadow: 0 0 10px var(--white);
+    width: 40px;
+}
+
+#mainHeader #mainNav ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+#mainHeader #mainNav ul a {
+    transition: ease-in-out 0.3s;
+}
+
+#mainHeader #mainNav ul a:hover {
+    font-weight: bold;
+    color: var(--yellow);
+    font-size: 1.4rem;
+}
+
+/* Main Header Style´s ends Here */
+
+
+/* Containers Style´s ends Here */
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    width: 100%;
+    min-height: calc(100vh - 121px);
+}
+
+/* Containers Style´s ends Here */
+
+
+
+/* Main Footer Style´s ends Here */
+
+#mainFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    border-top: 2px solid var(--yellow);
+}
+
+#mainFooter p span {
+    font-weight: bold;
+}
+
+/* Main Footer Style´s ends Here */

@@ -19,6 +19,12 @@ const hbs = exphbs.create({
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+// Import Routes
+const toughtsRoutes = require('./routes/toughtsRoutes');
+
+// Import Controllers
+const ToughtController = require('./controllers/ToughtsController');
+
 // Receber resposta do body
 app.use(
     express.urlencoded({
@@ -63,6 +69,9 @@ app.use((req, res, next) => {
     next();
 });
 
+// Routes
+app.use('./toughts', toughtsRoutes);
+app.get('/', ToughtController.showToughts)
 
 conn
     .sync({force:true})

@@ -9,6 +9,11 @@
     --white: #f4f4f4;
 }
 
+::selection {
+    color: var(--black0);
+    background-color: var(--white);
+}
+
 * {
     margin: 0;
     padding: 0;

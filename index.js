@@ -21,6 +21,7 @@ app.set('view engine', 'handlebars');
 
 // Import Routes
 const toughtsRoutes = require('./routes/toughtsRoutes');
+const authRoutes = require('./routes/authRoutes');
 
 // Import Controllers
 const ToughtController = require('./controllers/ToughtsController');
@@ -70,7 +71,8 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use('./toughts', toughtsRoutes);
+app.use('/toughts', toughtsRoutes);
+app.use('/auth', authRoutes)
 app.get('/', ToughtController.showToughts)
 
 conn

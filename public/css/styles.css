@@ -78,7 +78,7 @@ body {
 /* Main Header Style´s ends Here */
 
 
-/* Containers Style´s ends Here */
+/* Containers Style´s starts Here */
 
 .container {
     display: flex;
@@ -89,11 +89,82 @@ body {
     min-height: calc(100vh - 121px);
 }
 
+.container.auth {
+    justify-content: center;
+    gap: 1.5rem;
+}
+
 /* Containers Style´s ends Here */
 
 
+/* AuthForm Style´s starts Here */
 
-/* Main Footer Style´s ends Here */
+.authForm {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.authForm .form-controll {
+    margin: 0.5rem 0;
+}
+
+.authForm .form-controll input  {
+    margin-left: 1rem;
+    font-weight: bold;
+    padding: 0.2rem 0.4rem;
+    color: var(--black0); 
+}
+
+.authForm .form-controll label {
+    font-weight: bolder;
+}
+
+.authForm .form-controll input:focus {
+    border: 2px solid var(--yellow);
+    outline: 1px solid var(--white);
+}
+
+.authForm h2 {
+    color: var(--yellow);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.authForm a {
+    color: var(--yellow);
+}
+
+.authForm a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.authForm button {
+    margin: 0.7rem 0;
+    color: var(--yellow);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--yellow);
+    border-radius: 1rem;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+}
+
+.authForm button:hover {
+    color: var(--black1);
+    background-color: var(--yellow);
+    box-shadow: 0 0 10px var(--yellow),
+                0 0 5px var(--yellow),
+                0 0 15px var(--yellow);
+
+}
+
+/* AuthForm Style´s ends Here */
+
+
+/* Main Footer Style´s starts Here */
 
 #mainFooter {
     display: flex;

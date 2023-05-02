@@ -1,24 +1,26 @@
-<div class="container">
-    <h2>Register Now</h2>
-    <form action="/register" method="POST">
-        <div class="form-controll">
-            <label for="name">Name :</label>
-            <input type="text" name="name" placeholder="Enter your name" required>
-        </div>
-        <div class="form-controll">
-            <label for="email">E-mail :</label>
-            <input type="text" name="email" placeholder="Enter your E-mail" required>
-        </div>
-        <div class="form-controll">
-            <label for="password">Password :</label>
-            <input type="password" name="password" placeholder="Enter your Password" required>
-        </div>
-        <div class="form-controll">
-            <label for="confirmPassword">Confirm Passqord :</label>
-            <input type="password" name="confirmPassword" placeholder="Confirm your password" required>
-        </div>
+<div class="container auth">
+    <div class="authForm">
+        <h2>Register Now</h2>
+        <form action="/register" method="POST">
+            <div class="form-controll">
+                <label for="name">Name :</label>
+                <input type="text" name="name" placeholder="Enter your name" required autofocus>
+            </div>
+            <div class="form-controll">
+                <label for="email">E-mail :</label>
+                <input type="text" name="email" placeholder="Enter your E-mail" required>
+            </div>
+            <div class="form-controll">
+                <label for="password">Password :</label>
+                <input type="password" name="password" placeholder="Enter your Password" required>
+            </div>
+            <div class="form-controll">
+                <label for="confirmPassword">Confirm Password :</label>
+                <input type="password" name="confirmPassword" placeholder="Confirm your password" required>
+            </div>
 
-        <button type="submit">Register</button>
-        <p>Do you have an account? <a href="/auth/login">login</a></p>
-    </form>
+            <button type="submit">Register</button>
+            <p>Do you have an account? <a href="/auth/login">login</a></p>
+        </form>
+    </div>
 </div>

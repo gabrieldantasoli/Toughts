@@ -180,3 +180,11 @@ body {
 }
 
 /* Main Footer Style´s ends Here */
+
+
+
+.messages {
+    position: absolute;
+    top: 6rem;
+    right: 1rem;
+}

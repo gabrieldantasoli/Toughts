@@ -28,8 +28,13 @@
     </header>
 
     {{#if messages.message}}
-        {{messages.message}}
-    {{/if}}
+        <div class="message">
+            {{messages.message}}
+        </div>
+        
+    {{/if}} 
+
+    
     {{{ body }}}
     
     <footer id="mainFooter">

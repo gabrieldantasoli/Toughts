@@ -72,7 +72,7 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/toughts', toughtsRoutes);
-app.use('/auth', authRoutes)
+app.use('/auth', authRoutes);
 app.get('/', ToughtController.showToughts)
 
 conn

@@ -183,8 +183,12 @@ body {
 
 
 
-.messages {
+.message {
+    background-color: red;
     position: absolute;
     top: 6rem;
     right: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-bottom: 2px solid var(--white);
 }

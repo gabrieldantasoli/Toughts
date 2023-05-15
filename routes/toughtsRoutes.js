@@ -3,9 +3,9 @@ const ToughtController = require('../controllers/ToughtsController');
 const router = express.Router();
 
 // helper
-const checkAuth = require('../helpers/auth').checkAuth
+const checkAuth1 = require('../helpers/auth').checkAuth;
 
-router.get('/dashboard', checkAuth, ToughtController.dashboard);
+router.get('/dashboard', checkAuth1, ToughtController.dashboard);
 router.get('/', ToughtController.showToughts);
 
 module.exports = router;

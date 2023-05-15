@@ -10,15 +10,16 @@ module.exports = class AuthController {
         const {email, password} = req.body;
 
         // find user
-        const user = await User.findOne({wher: {email: email}});
+        const user = await User.findOne({where: {email: email}});
 
         if (!user) {
             req.flash('message', 'User not Found"!');
             res.render('auth/login');
             return;
         }
+
         //check if password match
-        const passwordMatch = bcrypt.compare(password, user.password);
+        const passwordMatch = bcrypt.compareSync(password, user.password);
 
         if (!passwordMatch) {
             req.flash('message', 'Incorrect password!');
@@ -28,7 +29,7 @@ module.exports = class AuthController {
 
         req.session.userid = user.id;
 
-        req.flash('message', 'Autenticação realixada com sucesso!');
+        req.flash('message', 'Autenticação realizada com sucesso!');
 
         req.session.save(() => {
             res.redirect('/');

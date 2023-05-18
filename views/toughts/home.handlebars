@@ -1,3 +1,13 @@
 <section class="container">
     <h1>all toughts</h1>
+    <div class="toughts-container">
+        {{#each toughts}}
+            <figure>
+                <blockquote>
+                    "{{this.title}}"
+                </blockquote>
+                <figcaption>por <span>{{this.User.name}}</span></figcaption>
+            </figure>
+        {{/each}}
+    </div>
 </section>

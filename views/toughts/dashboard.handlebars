@@ -6,7 +6,16 @@
     <h3>your Tought</h3>
     <ul>
         {{#each toughts}}
-            <li>{{this.title}}</li>
+            <li class="dash_pens">
+                <span class="label">{{this.title}}</span>
+                <span class="actions">
+                    <a href="/">Edit</a>
+                    <form action="/">
+                        <input type="hidden" name="id" value="{{this.id}}">
+                        <input type="submit" value="Excluir" class="btn" >
+                    </form>
+                </span>
+            </li>
         {{/each}}
     </ul>
 </div>

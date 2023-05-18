@@ -229,3 +229,50 @@ body {
                 0 0 5px var(--yellow),
                 0 0 15px var(--yellow);
 }
+
+.dash_pens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid var(--yellow);
+}
+
+.dash_pens .label {
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.dash_pens a {
+    color: green;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    border: 1px solid green;
+    border-radius: 1rem;
+    margin-right: 0.6rem;
+}
+
+.dash_pens a:hover {
+    color: var(--white);
+    background-color: green;
+}
+
+.dash_pens .btn {
+    color: red;
+    background-color: transparent;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    border: 1px solid red;
+    border-radius: 1rem;
+    margin-right: 0.6rem;
+}
+
+.dash_pens .btn:hover {
+    color: var(--white);
+    background-color: red;
+}
+
+.actions {
+    display: flex;
+    margin: 0.3rem 0;
+}

@@ -192,3 +192,40 @@ body {
     font-weight: bold;
     border-bottom: 2px solid var(--white);
 }
+
+.toughts-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.toughts-form-container input {
+    color: var(--black1);
+    padding: 0.2rem 0.8rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.toughts-form-container input[type="submit"] {
+    margin: 0.7rem 0 auto;
+    color: var(--yellow);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--yellow);
+    border-radius: 1rem;
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    margin-top: 1rem;
+}
+
+.toughts-form-container input[type="submit"]:hover {
+    color: var(--black1);
+    background-color: var(--yellow);
+    box-shadow: 0 0 10px var(--yellow),
+                0 0 5px var(--yellow),
+                0 0 15px var(--yellow);
+}

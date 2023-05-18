@@ -1,5 +1,28 @@
 <section class="container">
-    <h1>all toughts</h1>
+    <header>
+        <h1>all toughts</h1>
+        <div class="forms">
+            <form action="/" method="GET">
+                <input type="text" name="search" placeholder="Buscando por algo ?">
+                <input type="submit" class="btn" value="Busrcar">
+            </form>
+            <div class="order-container">
+                <span>Ordenar por : </span>
+                <form action="/" method="Get">
+                    <input type="hidden" name="search" value="{{this.search}}">
+                    <input type="hidden" name="order" value="new">
+                    <button type="submit"><i class="bi bi-arrow-up"></i></button>
+                </form>
+                <form action="/" method="Get">
+                    <input type="hidden" name="search" value="{{this.search}}">
+                    <input type="hidden" name="order" value="old">
+                    <button type="submit"><i class="bi bi-arrow-down"></i></button>
+                </form>
+            </div>
+            <a href="/">Clean</a>
+        </div>
+    </header>
+
     <div class="toughts-container">
         {{#each toughts}}
             <figure>

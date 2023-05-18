@@ -120,7 +120,7 @@ body {
     font-weight: bolder;
 }
 
-.authForm .form-controll input:focus {
+input:focus {
     border: 2px solid var(--yellow);
     outline: 1px solid var(--white);
 }
@@ -275,4 +275,69 @@ body {
 .actions {
     display: flex;
     margin: 0.3rem 0;
+}
+
+section.container header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+section.container header h1 {
+    font-size: 2rem;
+    color: var(--yellow);
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+section.container .order-container {
+    display: flex;
+}
+
+section.container .forms {
+    display: flex;
+    gap: 2rem;
+}
+
+section.container input[type="text"] {
+    color: var(--black0);
+    padding: 0.3rem 0.5rem;
+}
+
+section.container input[type="submit"], section.container a {
+    background-color: transparent;
+    color: var(--yellow);
+    font-weight: bolder;
+    padding: 0.3rem 0.5rem;
+    border: 2px solid var(--yellow);
+    border-radius: 0.5rem;
+    margin-left: 0.3rem;
+}
+
+section.container input[type="submit"]:hover, section.container a:hover, section.container button:hover {
+    color: var(--black1);
+    background-color: var(--yellow);
+    box-shadow: 0 0 10px var(--yellow),
+                0 0 5px var(--yellow),
+                0 0 15px var(--yellow);
+}
+
+.order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.order-container span {
+    font-size: 1.2rem;
+}
+
+.order-container button {
+    background-color: transparent;
+    padding: 0.2rem 0.4rem;
+    border: 2px solid var(--yellow);
+    border-radius: 0.5rem;
 }

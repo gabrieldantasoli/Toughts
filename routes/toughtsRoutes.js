@@ -5,7 +5,8 @@ const router = express.Router();
 // helper
 const checkAuth1 = require('../helpers/auth').checkAuth;
 
-router.get('/dashboard', checkAuth1, ToughtController.createTought);
+router.get('/add', checkAuth1, ToughtController.createTought);
+router.post('/add', checkAuth1, ToughtController.createToughtSave);
 router.get('/dashboard', checkAuth1, ToughtController.dashboard);
 router.get('/', ToughtController.showToughts);
 

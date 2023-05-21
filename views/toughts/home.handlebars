@@ -1,6 +1,15 @@
 <section class="container">
     <header>
-        <h1>all toughts</h1>
+        {{#if search}}
+            <h1>Você está Buscando por : <span>{{search}}</span></h1>
+            {{#if toughtsQty}}
+                <p>Foram encontrados <span>{{toughtsQty}} Toughts.</span></p>
+            {{else}}
+                <p>Nenhum pensamento foi encontrado.</p>
+            {{/if}}
+        {{else}}
+            <h1>All <span>Toughts</span></h1>
+        {{/if}}
         <div class="forms">
             <form action="/" method="GET">
                 <input type="text" name="search" placeholder="Buscando por algo ?">

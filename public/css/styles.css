@@ -391,3 +391,7 @@ ul li {
 ul span.label {
     padding-left: 1rem;
 }
+
+p {
+    margin-bottom: 0.5rem;
+}
